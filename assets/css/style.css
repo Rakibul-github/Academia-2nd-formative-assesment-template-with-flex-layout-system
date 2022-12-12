@@ -1,7 +1,7 @@
 :root{
     --brand-color: #1EB2A6;
     --bg-color: #f8f8f8;
-    --para-color: rgba(255,255,255,0.7);
+    --para-color: #f8f8f8;
     --font-family: 'Roboto', sans-serif;
 }
 *{
@@ -22,7 +22,7 @@ h2{
     font-size: 46px;
     color: rgba(0, 0, 0, 0.8);
     font-weight: 500;
-    line-height: 4rem;
+    line-height: 1.5;
 }
 h3{
     font-size: 1rem;
@@ -35,6 +35,7 @@ p{
     font-size: 16px;
     color: var(--para-color);
     font-weight: 400;
+    line-height: 1.5;
 }
 img{
     display: block;
@@ -205,7 +206,7 @@ nav .nav-inner .nav-links ul {
     justify-content: flex-end;
     align-items: center;
 }
-.nav-button button{
+.nav-button a{
     position: relative;
     color: #fff;
     background: var(--brand-color);
@@ -218,7 +219,11 @@ nav .nav-inner .nav-links ul {
     cursor: pointer;
     transition: .5s all;
 }
-.nav-button button::before{
+.nav-button a:hover{
+    color: #1EB2A6;
+    background-color: #fff;
+}
+.nav-button a::before{
     position: absolute;
     content: '';
     width: 4rem;
@@ -227,6 +232,10 @@ nav .nav-inner .nav-links ul {
     transform: skew(-25deg);
     top: 0;
     left: -7%;
+    transition: 0.5s all;
+}
+.nav-button a:hover::before{
+    background-color: #fff;
 }
 /* nav code end  */
 /* header-content code start  */
@@ -253,7 +262,7 @@ nav .nav-inner .nav-links ul {
 }
 .header-inner .header-content p{
     line-height: 1.8;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--para-color);
     padding: 1.5rem 0;
 }
 .header-inner .header-content a{
@@ -262,9 +271,10 @@ nav .nav-inner .nav-links ul {
     font-size: 13px;
     transition: .5s all;
     letter-spacing: 0.1em;
-    padding: 15px 30px;
+    padding: 20px 30px;
     border-radius: 5px;
     text-transform: uppercase;
+    margin-right: 5px;
 }
 .header-inner .header-content a:hover{
     background: #fff;
@@ -554,3 +564,83 @@ nav .nav-inner .nav-links ul {
     color: #fff;
 }
 /* features section code end   */
+
+/* testimonial section code start  */
+.testimonial{
+    background: var(--bg-color);
+    padding: 5rem 0;
+}
+.testimonial-inner .testimonial-title{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+.testimonial-inner .testimonial-content-inner{
+    flex-direction: column;
+    background: #fff;
+    padding: 3.5rem 1.8rem;
+    flex: 1;
+    margin-right: 25px;
+    transition: .5s all;
+}
+.testimonial-inner .testimonial-content-inner:hover{
+    background: var(--brand-color)
+}
+/* .testimonial-content-inner header code start  */
+.testimonial-inner .testimonial-content-inner .header{
+    justify-content: center;
+    align-items: center;
+}
+.testimonial-inner .testimonial-content-inner .header .header-img-box{
+    flex: 1;
+    position: relative;
+    margin-right: 8%;
+}
+.testimonial-inner .testimonial-content-inner .header .header-img-box img{
+    width: 100%;
+    border-radius: 50%;
+}
+.testimonial-inner .testimonial-content-inner .header .header-img-box i{
+    position: absolute;
+    background: #1EB2A6;
+    padding: 8px;
+    color: #fff;
+    border-radius: 50%;
+    right: 0;
+    bottom: 0;
+}
+.testimonial-inner .testimonial-content-inner:hover .header i{
+    background-color: #fff;
+    color: var(--brand-color);
+}
+/* .header .header-content code start  */
+.testimonial-inner .testimonial-content-inner .header .header-content{
+    flex: 2;
+}
+.testimonial-inner .testimonial-content-inner .header .header-content h3{
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+    font-weight: 600;
+}
+.testimonial-inner .testimonial-content-inner .header .header-content span{
+    display: inline-block;
+    color: #1EB2A6;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 3;
+    /* margin-top: 8px; */
+}
+.testimonial-inner .testimonial-content-inner:hover .header .header-content h3,
+.testimonial-inner .testimonial-content-inner:hover .header .header-content span{
+    color: #fff;
+}
+/* testimonial-content-inner body code start  */
+.testimonial-inner .testimonial-content-inner .body p{
+    color: gray;
+    margin-top: 2rem;
+}
+.testimonial-inner .testimonial-content-inner:hover .body p{
+    color: var(--para-color);
+}
+/* testimonial section code end  */

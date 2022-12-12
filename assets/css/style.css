@@ -1,5 +1,6 @@
 :root{
     --brand-color: #1EB2A6;
+    --bg-color: #f8f8f8;
     --para-color: rgba(255,255,255,0.7);
     --font-family: 'Roboto', sans-serif;
 }
@@ -472,3 +473,84 @@ nav .nav-inner .nav-links ul {
     border: 1px solid #1EB2A6;
 }
 /* courses section code end  */
+
+/* features section code start  */
+.features{
+    background-color: #F8F8F8;
+}
+.features-inner{
+    padding: 2rem 0rem ;
+}
+/* feature title code  */
+.features-inner .features-title{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 4rem;
+}
+/* features items code  */
+.features-inner .features-items{
+    /* align-items: center; */
+    justify-content: center;
+    align-content: stretch;
+}
+/* feature items content code  */
+.features-inner .features-items .features-items-content{
+    flex: 1;
+    background: #fff;
+    flex-direction: column;
+    margin-right: 15px;
+    padding: 2rem 1rem;
+    transition: .5s all;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.features-inner .features-items .features-items-content .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.features-inner .features-items .features-items-content .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.features-inner .features-items .features-items-content .icon i{
+    font-size: 3.5rem;
+    color: #1EB2A6;
+    margin-bottom: 1rem;
+}
+.features-inner .features-items .features-items-content .text h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    line-height: 1.5;
+    text-align: center;
+}
+.features-inner .features-items .features-items-content .text span a{
+    color: #1EB2A6;
+    font-size: 13px;
+    font-weight: 500;
+    background: #f8f8f8;
+    padding: 5px;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: .5s all;
+    border: 1px solid transparent;
+}
+.features-inner .features-items .features-items-content .text span a:hover{
+    background: #1EB2A6;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+}
+/* features items content-box hover effect code  */
+.features-inner .features-items .features-items-content:hover{
+    background-color: #1EB2A6;
+}
+.features-inner .features-items .features-items-content:hover .icon i,
+.features-inner .features-items .features-items-content:hover .text h2{
+    color: #fff;
+}
+/* features section code end   */

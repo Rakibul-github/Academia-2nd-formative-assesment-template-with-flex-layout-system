@@ -43,6 +43,9 @@ img{
     height: 100%;
     object-fit: cover;
 }
+.bg{
+    background: var(--bg-color);
+}
 .d-flex{
     display: flex;
 }
@@ -398,11 +401,11 @@ nav .nav-inner .nav-links ul {
     padding-bottom: 6rem;
 }
 .courses-inner .courses-content .courses-items{
-    margin-right: 25px;
+    margin-right: 2%;
     background-color: #fff;
     border-radius: 5px;
     flex: 1;
-    padding: 2rem;
+    padding: 2.5rem;
 }
 /* courses items header code start  */
 .courses-content .courses-items .courses-items-header .icon-1{
@@ -410,8 +413,8 @@ nav .nav-inner .nav-links ul {
     align-items: center;
     justify-content: center;
     background: #1EB2A6;
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     font-size: 3rem;
     color: #fff;
@@ -442,6 +445,7 @@ nav .nav-inner .nav-links ul {
     align-items: center;
 }
 .courses-content .courses-items .courses-items-header .courses-items-header-content .img-box img{
+    height: auto;
     width: 20%;
     border-radius: 50%;
 }
@@ -481,6 +485,7 @@ nav .nav-inner .nav-links ul {
     color: #fff;
     background: var(--brand-color);
     border: 1px solid #1EB2A6;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
 }
 /* courses section code end  */
 
@@ -644,3 +649,127 @@ nav .nav-inner .nav-links ul {
     color: var(--para-color);
 }
 /* testimonial section code end  */
+
+/* blog section code start  */
+.blog .blog-inner .blog-title{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+/* blog content code start  */
+.blog{
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
+}
+.blog-inner .blog-content{
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+.blog-inner .blog-content .blog-content-inner{
+    flex: 1;
+    /* margin-right: 15px; */
+}
+.blog-inner .blog-content .blog-content-inner .body{
+    background-color: #fff;
+    padding: 2rem;
+}
+/* .blog-content-inner .body code start  */
+.blog-inner .blog-content .blog-content-inner .body span{
+    margin-right: 10px;
+    color: #999;
+    font-weight: 600;
+    font-size: 13px;
+}
+.blog-inner .blog-content .blog-content-inner .body .span-color{
+    color: #1EB2A6;
+}
+.blog-inner .blog-content .blog-content-inner .body span i{
+    color: var(--brand-color);
+}
+.blog-inner .blog-content .blog-content-inner .body h3{
+    text-transform: none;
+    margin: 1.5rem 0;
+}
+.blog-inner .blog-content .blog-content-inner .body h3 a{
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+    transition: .5s all;
+}
+.blog-inner .blog-content .blog-content-inner .body h3 a:hover{
+    color: #1EB2A6;
+}
+.blog-inner .blog-content .blog-content-inner .body p{
+    color: #999;
+}
+/* blog section code end  */
+
+/* price section code start  */
+.price{
+    padding: 7rem 0;
+}
+.price .price-inner .price-title{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 3rem;
+}
+.price-inner .price-content{
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+/* price-content-inner code start  */
+.price-inner .price-content .price-content-inner{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-right: 20px; */
+    background-color: #fff;
+    padding:  3rem;
+    text-align: center;
+}
+.price-inner .price-content .price-content-inner h4{
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    font-weight: 700;
+}
+.price-inner .price-content .price-content-inner h2{
+    color: var(--brand-color);
+    font-size: 3.1rem;
+    padding: 1rem 0;
+}
+.price-inner .price-content .price-content-inner h2 sup{
+    font-size: 24px;
+    font-weight: 400;
+    color: #808080;
+}
+.price-inner .price-content .price-content-inner p{
+    color: #999;
+    line-height: 1.8;
+}
+.price-inner .price-content .price-content-inner a{
+    margin-top: 2rem;
+    padding: 15px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: .1em;
+    font-size: 12px;
+    font-weight: 600;
+    color: #1EB2A6;
+    border: 1px solid #1EB2A6;
+    transition: .5s all;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+.price-inner .price-content .price-content-inner a:hover{
+    color: #fff;
+    background-color: #1EB2A6;
+    border: 1px solid transparent;
+    box-shadow: none;
+}
+/* price section code end  */

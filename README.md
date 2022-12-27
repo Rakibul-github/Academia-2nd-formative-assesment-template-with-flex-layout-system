@@ -1,2 +1,1 @@
 # Academia-2nd-formative-assesment-template-with-flex-layout-system![screencapture-rakibul-github-github-io-Academia-2nd-formative-assesment-template-with-flex-layout-system-2022-12-21-14_12_03](https://user-images.githubusercontent.com/119796439/208853763-fbb89190-64ba-4e40-8511-ff495b806251.png)
-![screencapture-rakibul-github-github-io-Academia-2nd-formative-assesment-template-with-flex-layout-system-2022-12-21-14_12_03](https://user-images.githubusercontent.com/119796439/208853799-a0d8ef97-635a-4617-a439-824829aa2201.png)
